@@ -1,0 +1,341 @@
+.article {
+    padding: 20px 40px;
+    background-color: #fff;
+    &_title {
+        color: #542b87;
+        font-size: 24px;
+    }
+    &_main {
+        width: 60%;
+        h2 {
+            margin: 0;
+        }
+        &_prev, &_next {
+            width: 8px;
+            margin-left: 20px;
+        }
+        &_fixed {
+            &_bar {
+                padding: 5px 20px;
+                display: flex;
+                align-items: center;
+                background-color: #9684bb;
+                color: #fff;
+                border-radius: 8px 8px 0 0;
+                >img {
+                    width: 15px;
+                    margin-right: 5px;
+                }
+                >h3 {
+                    font-size: 16px;
+                    font-weight: normal;
+                    margin: 0;
+                }
+            }
+            &_user {
+                display: flex;
+                align-items: center;
+                margin-bottom: 50px;
+                &_pic {
+                    position: relative;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 50%;
+                    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+                    >img {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+                &_text {
+                    padding-left: 15px;
+                    h4 {
+                        font-weight: normal;
+                        font-size: 16px;
+                        color: #542b87;
+                        margin-bottom: 3px;
+                    }
+                    p {
+                        color: #7c8eb4;
+                        font-size: 13px;
+                        margin: 0;
+                    }
+                }
+            }
+            &_content {
+                padding: 20px;
+            }
+            &_link {
+                color: #7c8eb4;
+                margin-bottom: 20px;
+                display: block;
+            }
+            &_pic {
+                position: relative;
+                width: 100%;
+                padding-bottom: 90%;
+                margin-bottom: 15px;
+                >img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+    &_icon {
+        display: flex;
+        align-items: center;
+        &_main {
+            width: 12px;
+        }
+        span {
+            margin-left: 5px;
+            display: block;
+            color: #7c8eb4;
+        }
+        &.like {
+            
+            &.active {
+                .like_pic {
+                    >img {
+                        &.normal {
+                            opacity: 0;
+                        }
+                        &.active {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &_side {
+        padding-left: 40px;
+        h3 {
+            font-size: 24px;
+        }
+        &_item {
+            margin-bottom: 25px;
+        }
+        &_user {
+            display: flex;
+            align-items: center;
+            padding-right: 10px;
+        }
+        &_pic {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+            >img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                top: 0;
+                left: 0;
+            }
+        }
+        &_text {
+            padding-left: 10px;
+            h4 {
+                font-size: 18px;
+                margin: 0;
+                font-weight: normal;
+            }
+            p {
+                font-size: 14px;
+                margin: 0;
+                color: #7c8eb4;
+            }
+        }
+        &_item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            &.leader {
+                .article_side_num {
+                    color: #52b954;
+                }
+            }
+            &.max {
+                .article_side_num {
+                    background-color: #e0efe7;
+                    border: 1px solid #0f8b43;
+                    border-radius: 2px;
+                    padding: 2px;
+                    color: #52b954;
+                }
+            }
+        }
+        &_link {
+            padding: 12px 15px;
+            border: 1px solid #dedfec;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span {
+                color: #496dab;
+            }
+            img {
+                width: 7px;
+            }
+        }
+        &_list {
+            padding-bottom: 30px;
+            border-bottom: 1px solid #dedfec;
+            margin-bottom: 30px;
+        }
+    }
+    &_meeting {
+        display: flex;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 25px;
+        &_pic {
+            width: 26%;
+            padding-bottom: calc(26% * 1.2);
+            position: relative;
+            >img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                top: 0;
+                left: 0;
+            }
+        }
+        &_text {
+            width: 74%;
+            padding: 10px;
+            p {
+                font-size: 14px;
+                color: #7c8eb4;
+                margin-bottom: 5px;
+            }
+            h3 {
+                font-weight: 500;
+                margin: 0;
+                font-size: 16px;
+            }
+        }
+    }
+    &_info {
+        padding-top: 40px;
+        ul {
+            li {
+                margin-bottom: 5px;
+            }
+            a {
+                font-size: 14px;
+            }
+        }
+        &_top {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #b2b2b2;
+        }
+        &_download {
+            width: 150px;
+            display: block;
+            margin-bottom: 15px;
+        }
+        &_media {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            img {
+                width: 20px;
+            }
+            a {
+                display: block;
+                margin-left: 15px;
+            }
+        }
+        &_copyright {
+            padding-top: 15px;
+            font-size: 12px;
+            margin: 0;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        padding: 0;
+        background-color: transparent;
+        &_main {
+            width: 100%;
+        }
+    }
+}
+
+.like_pic {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    >img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        top: 0;
+        left: 0;
+        &.active {
+            opacity: 0;
+        }
+    }
+}
+
+.selectedarticle {
+    &_swiper {
+        margin-bottom: 25px;
+        &_item {
+            border-radius: 8px;
+            overflow: hidden;
+            display: block;
+            background-color: #fff;
+        }
+        &_pic {
+            width: 100%;
+            padding-bottom: 70%;
+            position: relative;
+            >img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                top: 0;
+                left: 0;
+            }
+        }
+        &_text {
+            padding: 10px 15px;
+        }
+    }
+}
+
+.article_btn {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    &_icon {
+        width: 14px !important;
+    }
+    span {
+        display: block;
+        margin-left: 5px;
+        color: #542b87;
+    }
+}
