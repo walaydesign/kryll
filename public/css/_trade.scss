@@ -1,0 +1,211 @@
+.trade {
+    &_leader {
+        padding: 40px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        text-align: center;
+        .row {
+            max-width: 1060px;
+            width: 100%;
+            margin: 0 auto 30px;
+            >div {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+        &_item {
+            padding: 20px 30px;
+            border: 1px solid #cbcbcb;
+            border-radius: 10px;
+            text-align: center;
+            .user-pic {
+                width: 82px;
+                height: 82px;
+                box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+                margin: 0 auto 15px;
+            }
+        }
+        &_name {
+            font-size: 18px;
+            margin-bottom: 5px;
+            font-weight: normal;
+        }
+        &_info {
+            color: #7c8eb4;
+            margin-bottom: 10px;
+        }
+        &_profit {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            background-color: #f1f1f1;
+            margin-bottom: 10px;
+            .num {
+                font-size: 18px;
+                color: #52b954;
+                margin-bottom: 2px;
+            }
+            .text {
+                color: #7c8eb4;
+                margin: 0;
+            }
+        }
+        &_btn {
+            background: linear-gradient(to right, #592db5 0%, #b857fe 100%);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 30px;
+            border-radius: 10px;
+            margin: 0 auto;
+            img {
+                width: 23px;
+            }
+            span {
+                font-size: 17px;
+                font-weight: 500;
+                margin-left: 10px;
+            }
+        }
+        &_all {
+            border-radius: 10px;
+            background-color: #f7f3ff;
+            padding: 15px 25px;
+            p {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 0;
+            }
+            a {
+                display: block;
+                font-size: 18px;
+                font-weight: 500;
+                padding: 10px 80px;
+                border-radius: 10px;
+                background-color: #6638af;
+                color: #fff;
+                width: fit-content;
+                text-align: center;
+            }
+        }
+    }
+    &_title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    &_intro {
+        margin-bottom: 25px;
+        color: #7c8eb4;
+    }
+    &_list {
+        .row {
+            margin-left: -16px;
+            margin-right: -16px;
+            >div {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+        }
+        &_content {
+            background-color: #fff;
+            padding: 40px 20px 30px;
+        }
+        &_table {
+            width: 100%;
+            margin-bottom: 15px;
+            vertical-align: middle;
+            td {
+                padding-bottom: 15px;
+                vertical-align: middle;
+                p {
+                    margin: 0;
+                }
+            }
+        }
+        &_title {
+            td {
+                color: #7c8eb4;
+            }
+        }
+        &_user {
+            display: flex;
+            align-items: center;
+            .user-pic {
+                width: 34px;
+                height: 34px;
+                box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+            }
+            p {
+                margin: 0;
+                padding-left: 15px;
+            }
+        }
+        &_all {
+            width: 100%;
+            display: block;
+            font-size: 18px;
+            color: #6638af;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #6638af;
+            text-align: center;
+        }
+    }
+    @media screen and (max-width: 1399px) {
+        &_leader {
+            &_item {
+                padding: 20px 15px;
+            }
+            &_profit {
+                padding-left: 5px;
+                padding-right: 5px;
+                .num {
+                    font-size: 14px;
+                }
+                .text {
+                    font-size: 14px;
+                }
+            }
+            &_btn {
+                width: 100%;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+    }
+    @media screen and (max-width: 1199px) {
+        &_leader {
+            &_item {
+                margin-bottom: 20px;
+            }
+            &_all {
+                a {
+                    width: 100%;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 991px) {
+        &_list {
+            &_content {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    @media screen and (max-width: 575px) {
+        &_leader {
+            padding: 20px;
+        }
+        &_list {
+            &_table {
+                min-width: 460px;
+                &-wrap {    
+                    overflow-x: auto;
+                }
+            }
+        }
+    }
+}

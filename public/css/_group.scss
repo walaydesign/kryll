@@ -1,0 +1,53 @@
+.group {
+    &_head {
+        &_check {
+            padding: 10px 20px;
+            background-color: #fff;
+            border: 1px solid #e1e2ef;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            &_item {
+                display: flex;
+                align-items: center;
+                padding-right: 30px;
+                margin: 10px 0;
+                p {
+                    // font-size: 18px;
+                    margin: 0;
+                    color: #7f93bc;
+                    padding-left: 8px;
+                }
+                &.checked {
+                    .group_head_check_circle {
+                        border-color: #a1cd5b;
+                        background-color: #a1cd5b;
+                        >img {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            &_circle {
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                border: 1px solid #9684bb;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                >img {
+                    width: 14px;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        &_head {
+            &_check {
+                padding: 10px 15px;
+            }
+        }
+    }
+}

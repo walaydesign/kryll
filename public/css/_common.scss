@@ -601,3 +601,47 @@ ul {
     color: #231815;
     margin-bottom: 15px;
 }
+
+.color-green {
+    color: #52b954;
+}
+
+.icon-title {
+    padding: 15px 15px 0;
+    display: flex;
+    align-items: center;
+    >img {
+        width: 100px;
+    }
+    &_text {
+        padding-left: 20px;
+        h1 {
+            font-size: 36px;
+            font-weight: 500;
+            color: #592d90;
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: 15px;
+            margin: 0;
+            color: #7f93bc;
+        }
+    }
+    @media screen and (max-width: 575px) {
+        padding-left: 0;
+        padding-right: 0;
+        >img {
+            width: 70px;
+        }
+        &_text {
+            padding-left: 10px;
+            width: calc(100 - 70px);
+        }
+        h1 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+}

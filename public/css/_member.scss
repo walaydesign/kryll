@@ -1,0 +1,388 @@
+.member {
+    &_banner {
+        p {
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid #cccccc;
+            border-bottom: 0;
+            border-radius: 10px 10px 0 0;
+            margin: 0;
+            color: #7c8199;
+            padding: 10px;
+        }
+        &_pic {
+            width: 100%;
+            padding-bottom: 17%;
+            position: relative;
+            >img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+    &_side {
+        width: 350px;
+        background-color: #fff;
+        position: relative;
+        padding: 95px 20px 20px;
+        border-right: 1px solid #e5e4ef;
+        &_num {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        &_title {
+            font-size: 15px;
+            margin: 0;
+            color: #7c8199;
+        }
+        &_item {
+            margin-bottom: 20px;
+        }
+    }
+    &_content {
+        width: calc(100% - 350px);
+        .manage_main_menu {
+            background-color: #fff;
+        }
+    }
+    &_userpic {
+        position: absolute;
+        width: 170px;
+        margin: 0 auto;
+        left: 20px;
+        top: -120px;
+        .user-pic {
+            width: 170px;
+            height: 170px;
+            margin: 0 auto;
+        }
+        &_flag {
+            width: 35px;
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+        }
+    }
+    &_name {
+        padding-bottom: 15px;
+        border-bottom: 1px solid #e5e4ef;
+        margin-bottom: 15px;
+        >p {
+            color: #1e1f23;
+            font-size: 20px;
+            margin: 0;
+            font-weight: 500;
+        }
+    }
+    &_edit {
+        width: 17px;
+        margin-left: 10px;
+    }
+    &_about {
+        h3 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        a {
+            font-size: 18px;
+            color: #9684bb;
+        }
+        p {
+            color: #7c8199;
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+    }
+    &_event {
+        padding: 20px;
+        max-width: 660px;
+        width: 100%;
+        &_main {
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #cccccc;
+            background-color: #fff;
+            .trend-asset_list {
+                border: 0;
+            }
+        }
+        .no-event {
+            margin-top: 15px;
+            border-top: 1px solid #cccccc;
+            padding-top: 15px;
+            p {
+                text-align: center;
+                color: #8e7fba;
+                margin: 0;
+            }
+        }
+    }
+    &_vip {
+        background-color: #fff;
+        padding: 30px;
+        margin-bottom: 20px;
+        &_top {
+            .row {
+                margin-left: -10px;
+                margin-right: -10px;
+                >div {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+            &_item {
+                padding: 15px;
+                border: 1px solid #e5e4ef;
+                height: 100%;
+            }
+            &_title {
+                font-size: 18px;
+                font-weight: normal;
+                margin-bottom: 8px;
+                color: #7c8199;
+            }
+            &_text {
+                color: #7c8199;
+                margin: 0;
+                font-size: 14px;
+                .num {
+                    color: #52b954;
+                }
+            }
+            &_trader {
+                margin-left: 8px;
+                >img {
+                    width: 30px;
+                }
+                >span {
+                    margin-left: 8px;
+                }
+                &.bronze {
+                    >span {
+                        color: #8e6447;
+                    }
+                }
+            }
+            &_btn {
+                padding: 10px 15px;
+                background: linear-gradient(to right, #592db5 0%, #b857fe 100%);
+                font-size: 18px;
+                font-weight: 500;
+                border-radius: 20px;
+                color: #fff;
+            }
+        }
+        &_trader {
+            margin-top: 30px;
+            padding-left: 15px;
+            position: relative;
+            z-index: 0;
+            &::before {
+                position: absolute;
+                content: "";
+                height: calc(100% - 65px);
+                width: 3px;
+                top: 0;
+                left: 45px;
+                transform: translateX(-50%);
+                z-index: -1;
+                background-color: #dfe1e5;
+            }
+            &_item {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                padding-bottom: 40px;
+                &.iron {
+                    .member_vip_trader_name {
+                        h4 {
+                            color: #7c8199;
+                        }
+                    }
+                    .member_vip_trader_save_smalltext {
+                        .highlight {
+                            color: #8e6447;
+                        }
+                    }
+                }
+                &.bronze {
+                    .member_vip_trader_name {
+                        h4 {
+                            color: #8e6447;
+                        }
+                    }
+                    .member_vip_trader_save_smalltext {
+                        .highlight {
+                            color: #7c8199;
+                        }
+                    }
+                }
+                &.silver {
+                    .member_vip_trader_name {
+                        h4 {
+                            color: #9ca7ad;
+                        }
+                    }
+                    .member_vip_trader_save_smalltext {
+                        .highlight {
+                            color: #a7adc1;
+                        }
+                    }
+                }
+                &.gold {
+                    .member_vip_trader_name {
+                        h4 {
+                            color: #d1983d;
+                        }
+                    }
+                    .member_vip_trader_save_smalltext {
+                        .highlight {
+                            color: #ba7e36;
+                        }
+                    }
+                }
+                &.daimond {
+                    .member_vip_trader_name {
+                        h4 {
+                            color: #33cccc;
+                        }
+                    }
+                    .member_vip_trader_save_smalltext {
+                        .highlight {
+                            color: #249eb2;
+                        }
+                    }
+                }
+                &.crystal {
+                    .member_vip_trader_name {
+                        h4 {
+                            color: #654bb7;
+                        }
+                    }
+                    .member_vip_trader_save_smalltext {
+                        .highlight {
+                            color: #493aa3;
+                        }
+                    }
+                }
+            }
+            &_name {
+                display: flex;
+                align-items: center;
+                width: calc((100% - 125px) * 0.35);
+                img {
+                    width: 60px;
+                }
+                h4 {
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin: 0;
+                    padding-left: 15px;
+                }
+            }
+            &_save {
+                width: calc((100% - 125px) * 0.65);
+                padding-left: 15px;
+                &_bigtext {
+                    font-size: 18px;
+                    margin-bottom: 3px;
+                    color: #7c8199;
+                }
+                &_smalltext {
+                    font-size: 14px;
+                    margin-bottom: 0;
+                    color: #7c8199;
+                }
+            }
+            &_btn {
+                width: 125px;
+                display: flex;
+                align-items: center;
+                padding: 10px 0;
+                justify-content: center;
+                border-radius: 13px;
+                border: 1px solid #7c8199;
+                img {
+                    width: 24px;
+                }
+                span {
+                    font-size: 14px;
+                    color: #7c8199;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1399px) {
+        &_side {
+            width: 100%;
+            border-right: none;
+            border-bottom: 1px solid #e5e4ef;
+        }
+        &_content {
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 1199px) {
+        &_vip {
+            &_top {
+                &_item {
+                    margin-bottom: 20px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        &_vip {
+            &_trader {
+                padding-left: 0;
+                &_name {
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+                &_save {
+                    width: 100%;
+                    padding-left: 75px;
+                    margin-bottom: 15px;
+                }
+                &_btn {
+                    margin-left: auto;
+                }
+                &::before {
+                    left: 30px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 575px) {
+        &_vip {
+            padding: 20px;
+            &_top {
+                &_btn {
+                    width: 100%;
+                }
+            }
+            &_trader {
+                &::before {
+                    left: 25px;
+                }
+                &_name {
+                    img {
+                        width: 50px;
+                    }
+                }
+                &_save {
+                    padding-left: 65px;
+                }
+            }
+        }
+    }
+}
