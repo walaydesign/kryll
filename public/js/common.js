@@ -16,3 +16,16 @@ var swiperStep = new Swiper(".step_swiper", {
         }
     }
 })
+
+$(".signup_input-country_active").click(function() {
+    $(".signup_input-country_list").slideToggle(300);
+})
+$(".signup_input-country_list li").click(function() {
+    $(".signup_input-country_list").slideUp(300);
+})
+$(document).click(function (event) {
+    var withdrawSelect = $(".signup_input-country");
+    if (!withdrawSelect.is(event.target) && withdrawSelect.has(event.target).length === 0) {
+        $(".signup_input-country_list").slideUp(300);
+    }
+});
