@@ -7,7 +7,7 @@
         padding-bottom: 20px;
         h1 {
             text-align: center;
-            font-size: 36px;
+            font-size: 32px;
             font-weight: 700;
             margin-bottom: 10px;
             color: #592d90;
@@ -15,7 +15,7 @@
         >p {
             text-align: center;
             color: #7c8199;
-            font-size: 18px;
+            font-size: 16px;
             margin-bottom: 30px;
         }
         &_main {
@@ -80,14 +80,14 @@
         }
         &_name {
             text-align: center;
-            font-size: 18px;
+            font-size: 16px;
             margin-bottom: 5px;
             color: #2d2d2d;
         }
         &_data {
             margin-bottom: 15px;
             span {
-                font-size: 14px;
+                font-size: 12px;
                 color: #7f93bc;
             }
             .square {
@@ -120,7 +120,7 @@
             }
             span {
                 color: #7f93bc;
-                font-size: 14px;
+                font-size: 12px;
                 &.color-green {
                     color: #52b954;
                 }
@@ -136,10 +136,10 @@
             background: linear-gradient(to right, #592db5 0%, #b857fe 100%);
             margin: 20px auto 0;
             img {
-                width: 23px;
+                width: 20px;
             }
             span {
-                font-size: 17px;
+                font-size: 15px;
                 color: #fff;
                 margin-left: 10px;
             }
@@ -156,7 +156,7 @@
         &_more {
             text-align: center;
             color: #7f93bc;
-            font-size: 21px;
+            font-size: 18px;
             text-decoration: underline;
             display: block;
         }
@@ -187,7 +187,7 @@
                 position: relative;
                 z-index: 0;
                 h2 {
-                    font-size: 24px;
+                    font-size: 20px;
                     font-weight: 500;
                     color: #592d90;
                     margin: 0;
@@ -200,7 +200,7 @@
                     p {
                         margin: 0;
                         color: #7f93bc;
-                        font-size: 18px;
+                        font-size: 16px;
                         padding-left: 15px;
                         background-color: #fff;
                     }
@@ -241,7 +241,7 @@
         }
         &_intro {
             color: #7f93bc;
-            font-size: 15px;
+            font-size: 13px;
             margin-bottom: 30px;
         }
         &_item {
@@ -250,6 +250,23 @@
             background-color: #fff;
             border: 1px solid #e1e2ef;
             text-align: center;
+            &:hover {
+                background-color: #f2f5fa;
+                .hot-trader_rank {
+                    &_data, &_num {
+                        display: none;
+                    }
+                    &_link, &_btn {
+                        display: block;
+                    }
+                    &_name {
+                        font-weight: 700;
+                    }
+                    &_user {
+                        filter: blur(3px);
+                    }
+                }
+            }
         }
         &_user {
             position: relative;
@@ -275,17 +292,17 @@
         }
         &_name {
             text-align: center;
-            font-size: 18px;
+            font-size: 16px;
             color: #2d2d2d;
             margin-bottom: 8px;
         }
         &_data {
-            font-size: 14px;
+            font-size: 12px;
             color: #7f93bc;
             margin-bottom: 3px;
         }
         &_num {
-            font-size: 18px;
+            font-size: 16px;
             color: #2d2d2d;
             margin: 0;
         }
@@ -306,10 +323,26 @@
                 margin-bottom: 3px;
             }
             &_num {
-                font-size: 18px;
+                font-size: 16px;
                 color: #52b954;
                 margin: 0;
             }
+        }
+        &_link {
+            font-size: 14px;
+            color: #9684bb;
+            text-decoration: underline;
+            display: none;
+        }
+        &_btn {
+            font-size: 14px;
+            padding: 10px;
+            width: 100%;
+            border-radius: 13px;
+            background-color: #9684bb;
+            color: #fff;
+            margin-top: 10px;
+            display: none;
         }
     }
     @media screen and (max-width: 991px) {

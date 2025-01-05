@@ -26,13 +26,14 @@
             }
         }
         &_name {
-            font-size: 18px;
+            font-size: 16px;
             margin-bottom: 5px;
             font-weight: normal;
         }
         &_info {
             color: #7c8eb4;
             margin-bottom: 10px;
+            font-size: 14px;
         }
         &_profit {
             width: 100%;
@@ -41,13 +42,14 @@
             background-color: #f1f1f1;
             margin-bottom: 10px;
             .num {
-                font-size: 18px;
+                font-size: 16px;
                 color: #52b954;
                 margin-bottom: 2px;
             }
             .text {
                 color: #7c8eb4;
                 margin: 0;
+                font-size: 14px;
             }
         }
         &_btn {
@@ -60,10 +62,10 @@
             border-radius: 10px;
             margin: 0 auto;
             img {
-                width: 23px;
+                width: 20px;
             }
             span {
-                font-size: 17px;
+                font-size: 15px;
                 font-weight: 500;
                 margin-left: 10px;
             }
@@ -73,13 +75,13 @@
             background-color: #f7f3ff;
             padding: 15px 25px;
             p {
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 500;
                 margin: 0;
             }
             a {
                 display: block;
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 500;
                 padding: 10px 80px;
                 border-radius: 10px;
@@ -91,13 +93,14 @@
         }
     }
     &_title {
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 700;
         margin-bottom: 5px;
     }
     &_intro {
         margin-bottom: 25px;
         color: #7c8eb4;
+        font-size: 14px;
     }
     &_list {
         .row {
@@ -119,8 +122,10 @@
             td {
                 padding-bottom: 15px;
                 vertical-align: middle;
+                font-size: 14px;
                 p {
                     margin: 0;
+                    font-size: 14px;
                 }
             }
         }
@@ -145,7 +150,7 @@
         &_all {
             width: 100%;
             display: block;
-            font-size: 18px;
+            font-size: 16px;
             color: #6638af;
             padding: 8px;
             border-radius: 5px;

@@ -12,18 +12,18 @@
         }
         &_icon {
             display: block;
-            width: 77px;
+            width: 65px;
             margin: 0 auto 20px;
         }
         &_daimond {
-            width: 95px;
+            width: 75px;
         }
         &_text {
             width: calc(100% - 95px);
             padding-left: 30px;
             &_big {
                 color: #353535;
-                font-size: 24px;
+                font-size: 20px;
                 font-weight: 500;
                 line-height: 1.5;
                 padding-bottom: 13px;
@@ -31,7 +31,7 @@
             }
             &_small {
                 color: #7f93bc;
-                font-size: 21px;
+                font-size: 18px;
                 margin: 0;
             }
         }
@@ -45,7 +45,7 @@
             margin-top: 30px;
             margin-left: auto;
             span {
-                font-size: 21px;
+                font-size: 18px;
                 font-weight: 500;
                 margin-right: 10px;
                 color: #fff;
